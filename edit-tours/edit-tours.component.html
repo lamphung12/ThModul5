@@ -1,0 +1,11 @@
+<p>edit-tours works!</p>
+<p>create-tours works!</p>
+<form [formGroup]="formEdit" (ngSubmit)="edit(id)" >
+  <p>Title</p>
+  <input type="text" formControlName="title">
+  <p>Price</p>
+  <input type="text" formControlName="price">
+  <p>Description</p>
+  <input type="text" formControlName="description">
+  <button type="submit">Edit</button>
+</form>
